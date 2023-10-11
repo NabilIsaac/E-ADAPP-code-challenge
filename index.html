@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-DAPP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col md:flex-row md:h-screen font-[poppins]">
+      <div class="md:w-1/2 w-full md:rounded-r-lg md:relative">
+        <div class="p-5 md:pt-16">
+          <img
+            src="/assets/images/e-adapp-logo.png"
+            class="h-28 md:ml-10"
+            alt=""
+          />
+          <div class="flex flex-col md:items-center">
+            <div class="mt-5">
+              <h1 class="text-7xl letter-wider text-[#22A45D]">Login</h1>
+              <!-- Rest of your form content -->
+              <div class="flex flex-col mt-2">
+                <label for="email" class="font-bold text-xl mb-2">Email</label>
+                <input
+                  type="email"
+                  class="rounded-xl bg-gray-100 p-2 h-14 border border-black placeholder:text-xl w-full"
+                  placeholder="Email or username"
+                  name=""
+                  id="email"
+                />
+              </div>
+              <div class="flex flex-col mt-4">
+                <label for="password" class="font-bold text-xl mb-2"
+                  >Password</label
+                >
+                <div class="relative">
+                  <input
+                    type="password"
+                    class="rounded-xl bg-gray-100 p-2 h-14 border border-black placeholder:text-xl w-full pr-12"
+                    placeholder="Password"
+                    name="password"
+                    id="password"
+                  />
+                  <button
+                    type="button"
+                    id="togglePassword"
+                    class="absolute inset-y-0 right-0 flex items-center pr-4"
+                  >
+                    <img
+                      src="/assets/images/hide.png"
+                      alt="Toggle Password"
+                      class="h-6 w-6"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-between mt-2">
+                <label for="remember-me" class="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="remember-me"
+                    class="rounded-full h-4 w-4 mr-2 border boder-[#22A45D]"
+                  />
+                  <span class="text-[#666666]">Remember me</span>
+                </label>
+                <a href="#" class="underline text-[#666666]">Forgot password?</a>
+              </div>
+              <button
+                class="rounded-xl bg-[#22A45D] text-white text-center mt-5 p-2 h-14 w-full text-2xl font-bold"
+              >
+                Login
+              </button>
+              <p class="text-sm font-light mt-2 text-[#666666]">
+                Don't have an account?
+                <a href="#" class="underline text-[#22A45D]">Sign up</a>
+              </p>
+              <div class="flex items-center mt-4">
+                <hr class="flex-grow border-t-2 border-black" />
+                <span class="px-4 text-black">or continue with</span>
+                <hr class="flex-grow border-t-2 border-black" />
+              </div>
+              <div class="flex justify-between mx-10 mt-10">
+                <button class="rounded-2xl py-2 px-8 border border-gray-400">
+                  <img src="/assets/images/search.png" class="w-8 h-8" alt="" />
+                </button>
+                <button class="rounded-2xl py-2 px-8 border border-gray-400">
+                  <img
+                    src="/assets/images/facebook.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </button>
+                <button class="rounded-2xl py-2 px-8 border border-gray-400">
+                  <img
+                    src="/assets/images/twitter.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <!-- Disclaimer paragraph -->
+              <p class="text-sm md:mt-20 text-[#666666]">
+                By clicking the button above you agree to our
+                <a href="#" class="text-[#22A45D]">terms of use</a>
+                and
+                <a href="#" class="text-[#22A45D]">privacy policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2 w-full">
+        <div class="md:w-screen md:h-screen">
+          <img
+            src="/assets/images/annie-spratt.svg"
+            alt="Image"
+            class="h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
